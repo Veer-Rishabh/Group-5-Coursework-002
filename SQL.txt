@@ -162,7 +162,7 @@ INSERT INTO Seasons (season_year, winner_driver_id, winner_constructor_id) VALUE
 (2023, 'MV3',  5),
 (2024, 'MV3',  5),
 (2025, 'LN4',  6),
-(2026);
+(2026, null, null);
 
 
 
