@@ -4,9 +4,9 @@ CREATE TABLE Users (
     username VARCHAR(50) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_admin SMALLINT DEFAULT 0 NOT NULL
 );
-
 -- Teams Table
 CREATE TABLE Teams (
     team_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -272,3 +272,5 @@ INSERT INTO Race_Results (result_id, driver_id, race_id, season_year, position, 
 --Users Data
 INSERT INTO Users (username, password_hash, email)
 VALUES ('testuser', 'password123', 'test@f1hub.com');
+
+ALTER TABLE USERS ADD COLUMN IS_ADMIN SMALLINT DEFAULT 0 NOT NULL;
