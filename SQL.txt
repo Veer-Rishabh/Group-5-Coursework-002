@@ -270,5 +270,5 @@ INSERT INTO Race_Results (result_id, driver_id, race_id, season_year, position, 
 ('2026-JPN-OB87', 'OB87', 'JapanGP', 2026, 22,  0.0, 'DNF');
 
 --Users Data
-INSERT INTO Users (username, password_hash, email)
-VALUES ('testuser', 'password123', 'test@f1hub.com');
+INSERT INTO Users (username, password_hash, email, 0)
+VALUES ('testuser', 'password123', 'test@f1hub.com', 1);
