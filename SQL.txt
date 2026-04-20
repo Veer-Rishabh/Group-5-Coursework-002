@@ -5,7 +5,7 @@ CREATE TABLE Users (
     password_hash VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    is_admin SMALLINT DEFAULT 0 NOT NULL
+    is_admin SMALLINT(1) DEFAULT 0 NOT NULL
 );
 -- Teams Table
 CREATE TABLE Teams (
